@@ -1,0 +1,97 @@
+/* Alineación horizontal de la línea superior del comentario */
+.linea-arriba-comentario {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo de la imagen del perfil */
+.linea-arriba-comentario img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Estilo del nombre de usuario */
+.linea-arriba-comentario label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Estilo de las estrellas */
+.Estrellas {
+    width: 100px;
+    height: 20px;
+}
+
+/*Estilos para la sección de comentarios*/
+.comentarios{
+    margin: 0 auto; /Centra la sección horizontalmente/
+width: 80%; /Ancho de la sección/
+display: flex; /Establece el modo de visualización en flexbox/
+flex-wrap: wrap; /Permite que los elementos se ajusten a una sola línea o se envuelvan a múltiples líneas/
+justify-content: space-between; /Distribuye el espacio horizontalmente/
+}
+
+/*Estilos para cada comentario*/
+.comentario {
+    width: 48%; /Ancho de cada comentario/
+margin-bottom: 20px; /Espacio entre comentarios/
+background-color: #f4f4f4; /Color de fondo/
+padding: 20px; /Espacio interior/
+box-sizing: border-box; /Incluye el borde y el relleno en el ancho y alto del elemento/
+}
+
+/*Estilos para la imagen de perfil*/
+.comentario img {
+    width: 50px; /Ancho de la imagen/
+height: 50px; /Altura de la imagen/
+margin-right: 10px; /Espacio entre la imagen y el texto/
+}
+
+/*Estilos para el nombre de usuario*/
+.comentario label {
+    font-size: 20px; /Tamaño de la fuente/
+font-weight: bold; /Negrita/
+margin-right: 10px; /Espacio entre el nombre y las estrellas/
+}
+
+/*Estilos para las estrellas*/
+.comentario .Estrellas {
+    width: 100px; /Ancho de las estrellas/
+height: 20px; /Altura de las estrellas/
+}
+
+/*Estilos para el comentario*/
+.comentario p {
+    margin: 10px 0; /Espacio alrededor del texto/
+}
+
+/*Estilos para la utilidad*/
+.comentario label:last-of-type {
+    font-size: 14px; /Tamaño de la fuente/
+margin-top: 10px; /Espacio encima del texto/
+}
+
+/*Estilos para el botón de utilidad*/
+.utilidad input{
+    background-color: #4CAF50; /Color de fondo/
+border: none; /Sin borde/
+color: white; /Color del texto/
+padding: 10px; /Espacio interior/
+text-align: center; /Centrar el texto/
+text-decoration: none; /Sin decoración de texto/
+display: inline-block;
+    vertical-align: middle;
+}
+
+.utilidad {
+    display: flex;
+    align-items: center;
+}
+
+.utilidad label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}

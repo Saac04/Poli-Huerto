@@ -1,0 +1,41 @@
+.consulta div{
+    width: 302px;
+    height: 332px;
+    background-color: #A8E0FD;
+    border-radius: 10px;
+    margin: 0px auto;
+}
+.consulta h1{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.error p{
+    margin-left: 15px;
+}
+#descripcion{
+    width: 265px;
+    height: 121px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+
+#Reporte {
+    background-color: #5ABFBF;
+    color: white;
+    width: 272px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+#Reporte:hover {
+    background-color: #5ABFBF;
+}
+
+#descripcion #Reporte{
+    display: flex;
+    justify-content: center;
+}

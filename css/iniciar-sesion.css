@@ -1,0 +1,87 @@
+
+/*.barra-negra {
+    background-color: black;
+    height: 5px;
+    margin-bottom: 20px;
+}*/
+#logo-gti {
+    width: 200px; /* ajusta el valor a lo que necesites */
+    height: auto;
+}
+
+
+section.inicio-sesión {
+    text-align: center;
+    margin-top: 50px;
+}
+
+section.inicio-sesión img {
+    display: block;
+    margin: 0 auto;
+}
+
+section.inicio-sesión h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+
+
+}
+
+section.inicio-sesión form {
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.2);
+}
+
+section.inicio-sesión label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+section.inicio-sesión input[type="text"],
+section.inicio-sesión input[type="password"] {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+section.inicio-sesión input[type="submit"] {
+    background-color: #5ABFBF;
+    color: white;
+    width: 250px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+section.inicio-sesión input[type="submit"]:hover {
+    background-color: #5ABFBF;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* ajustar según necesidad */
+}
+.pie-pagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 20px;
+    padding: 0 20px;
+}
+
+.pie-pagina a:last-child {
+    margin-left: 1450px;
+}

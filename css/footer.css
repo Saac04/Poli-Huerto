@@ -1,0 +1,23 @@
+footer{
+    background-color: black;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 10vh;
+    opacity: 100;
+    align-items: center;
+    align-items: center;
+}
+footer a{
+    background: none;
+    margin: 5px;
+}
+footer a img{
+    width:100px;
+    height: 100px;
+    margin: 5px;
+}
+

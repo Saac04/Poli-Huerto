@@ -1,0 +1,21 @@
+body{
+    max-width: 100%;
+    min-width: 500px;
+    height: 100%;
+    margin: 0px auto;
+
+}
+html {
+    height: 100%;
+}
+section{
+    margin-left: 50px;
+    margin-right: 50px;
+
+
+}
+body {
+    height: 100vh; /* establece la altura de la sección al 100% del viewport */
+    overflow: auto; /* permite desplazamiento si el contenido de la sección es más grande que la pantalla */
+    width: auto;
+}

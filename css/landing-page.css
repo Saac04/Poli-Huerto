@@ -1,0 +1,257 @@
+.Bienvenida{
+ overflow: hidden;
+    width: auto;
+    margin-right: -82px;
+    margin-left: -50px;
+}
+
+.landing-page img{
+    position: relative;
+    z-index: -1;
+    height: auto;
+    width: 113.5%;
+    /*max-height: 1500px;*/
+    margin-bottom: -75%;
+    margin-top: 7%;
+    margin-left: 0px;
+
+
+}
+
+.texto-encabezado{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 550%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 50%);
+    color: white;
+    margin-left: -5%;
+    width: 70%;
+    padding-inline: 21.5% 21.5%;
+
+}
+
+#saber-más{
+    z-index: 2;
+    background-color: #00CFA4;
+    margin: 50px 0 0 3%;
+    border: none;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    height: 100px;
+    width: 200px;
+}
+
+#saber-más a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 300%;
+    text-decoration: none;
+    color: white;
+}
+
+.Kit-gti{
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 13.25%;
+    margin-left: -5%;
+    background-color: #BEC7D8;
+    height: auto;
+    width: 113%;
+}
+
+#flecha-bajar{
+
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    margin-top: 0%;
+    max-height: auto;
+    width: 20%;
+}
+
+#imagen-kit img{
+
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    width: 80%;
+    display: flex;
+}
+
+.texto-kit h1{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 475%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 50%);
+    color: white;
+    margin: -50px 0 0 -5%;
+
+    padding: 1.5% 21.5% 1.5% 21.5%;
+}
+
+.texto-kit p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 200%;
+    text-align:justify;
+    color: rgb(0, 0, 0);
+    margin: 5%;
+    padding: 1.5% 5% 1.5% 5%;
+}
+
+#muestra-producto img{
+    z-index: 0;
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+    display: flex;
+
+}
+
+#muestra-producto h2{
+    font-family: 'Raleway', sans-serif;
+    z-index: 5;
+    position: absolute;
+    font-weight: 500;
+    font-size: 300%;
+    text-align: center;
+    background-color: white;
+    color: black;
+    margin: 0% 10% 0% 15%;
+    padding: 1.5% 1.5% 1.5% 1.5%;
+    left: 40%;
+    top: 75%;
+    border-radius: 25px 25px 25px 25px;
+}
+
+#muestra-producto h3{
+    font-family: 'Raleway', sans-serif;
+    z-index: 5;
+    position: absolute;
+    font-weight: 500;
+    font-size: 200%;
+    text-align: center;
+    background-color: #00CFA4;
+    color: white;
+    margin: 0% 0% 0% 27%;
+    padding: 1.5% 1.5% 1.5% 1.5%;
+    left: 50%;
+    top: 85%;
+    border-radius: 15px 15px 15px 15px;
+    rotate: -45deg;
+}
+
+.carrusel-imagenes{
+    display: flex;
+    justify-content: space-between;
+    margin: -1% -12% 0 -3%;
+    height: 18rem;
+
+}
+
+.carrusel-imagenes img{
+    margin: 4px 4px 4px 4px;
+}
+.carrusel-imagenes img:nth-of-type(1){
+    flex-grow: 2;
+}
+.carrusel-imagenes img:nth-of-type(2){
+    flex-grow: 1;
+}
+.carrusel-imagenes img:nth-of-type(3){
+    flex-grow: 1;
+}
+
+.Detalles-producto h3{
+    font-family: 'Raleway', sans-serif;
+    z-index: 5;
+    position: absolute;
+    font-weight: 500;
+    font-size: 200%;
+    background-color: #00CFA4;
+    color: white;
+    margin: -5% 0 0 -4%;
+    padding: 2% 2% 2% 2%;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.mapa-producto img{
+    z-index: -1;
+    position: relative;
+    margin: -1% -9% 0 -50px;
+    height: auto;
+    width: 107.5%;
+    background-color: #E1E6EE;
+    padding: 7% 6.6% 5% 6.6%;
+}
+
+.sensores{
+    background-color: #E1E6EE;
+    margin: -5% -15% -5% -50px ;
+    padding: 5% 6% 5% 6%;
+}
+
+.sensores div{
+    display: flex;
+    align-items: center;
+}
+
+.sensores div img{
+    height: 250px;
+    width: 250px;
+    flex-grow: 3;
+}
+
+.sensores div p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    text-align:justify;
+    margin-left: 5%;
+    color: rgb(0, 0, 0);
+    padding: 1.5% 0% 1.5% 0%;
+    position: relative;
+
+}
+
+footer div{
+
+    z-index: 2;
+    background-color: #E1E6EE;
+    padding: 0 0% 0% 0%;
+    margin-left: -50px;
+    margin-right:0% ;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    width: 113.5%;
+}
+
+hr{
+    border: 2px solid black;
+}
+
+footer div a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 175%;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+
+.flecha-subir{
+    height: 100%;
+    width: 113.5%;
+}
+
+.flecha-subir a img{
+    height: auto;
+    width: 200%;
+}
+

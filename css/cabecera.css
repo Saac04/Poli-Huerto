@@ -1,0 +1,29 @@
+header{
+    background-color: white;
+    border-style: solid;
+    border-top: black;
+    border-right: black;
+    border-left: black;
+    display: flex;
+    margin: 0px auto;
+    flex: 1 1 0px;
+    max-width: 100%;
+    min-width: 500px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 10px;
+    width: 100vh;
+}
+header h1{
+    font-size: 29px;
+}
+#iniciar-sesion{
+    width: 100px;
+    height: 100px;
+}
+#mi-cuenta{
+    width: 100px;
+    height: 100px;
+}

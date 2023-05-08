@@ -1,0 +1,30 @@
+body {
+    background-color: #E1E6EE;
+}
+p {
+    font-family: "Raleway", sans-serif;
+    font-size: x-large;
+}
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: xx-large;
+}
+.flecha-subir {
+    text-align: center;
+}
+.flecha-subir img {
+    transform: rotate(-90deg);
+}
+.botones-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.botones-footer a {
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}

@@ -1,0 +1,49 @@
+h1{
+    font-family: "Raleway", sans-serif;
+}
+section.reciclar {
+    text-align: center;
+    margin-top: 50px;
+}
+section.reciclar img {
+    display: block;
+    margin: 0 auto;
+}
+section.reciclar h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+
+}
+section.reciclar form {
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.2);
+}
+section.reciclar label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+section.reciclar input[type="text"],
+section.reciclar input[type="password"] {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+section.reciclar input[type="submit"] {
+    background-color: #5ABFBF;
+    color: white;
+    width: 97%;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+section.reciclar input[type="submit"]:hover {
+    background-color: #5ABFBF;
+}

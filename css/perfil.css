@@ -1,0 +1,42 @@
+#perfil {
+    width: 700px;
+    height: 544px;
+
+}
+
+#perfil h1{
+    justify-content: left;
+}
+
+#datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#datos div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    margin: 10px 0;
+}
+
+#datos div label {
+    width: 200px;
+}
+
+#cerrar-sesion {
+    background-color: #5ABFBF;
+    color: white;
+    width: 500px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 60px;
+    margin-top: 50px;
+}

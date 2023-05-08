@@ -1,3 +1,5 @@
+@import url(font.css);
+
 header{
     background-color: white;
     border-style: solid;
@@ -17,7 +19,9 @@ header{
     width: 100vh;
 }
 header h1{
-    font-size: 29px;
+    font-family: 'Raleway';
+    font-size: 50px;
+    font-weight: 400;
 }
 #iniciar-sesion{
     width: 100px;

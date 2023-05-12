@@ -9,7 +9,8 @@
 
 section.inicio-sesión {
     text-align: center;
-    margin-top: 50px;
+    margin:  50px 0 0 0;
+    width: 110%;    
 }
 
 section.inicio-sesión img {
@@ -58,6 +59,7 @@ section.inicio-sesión input[type="password"] {
     height: 3em;
     width: 100%;
     padding: 0;
+    font-family: 'Raleway';
     font-size: 2.6em;
     border-radius: 40px;
     border: 1px solid #ccc;
@@ -67,11 +69,16 @@ section.inicio-sesión input[type="password"] {
 section.inicio-sesión input[type="submit"] {
     background-color: #5ABFBF;
     color: white;
-    width: 250px;
-    font-size: 1.3em;
+    font-family: 'Raleway';
+    font-size: 4rem;
+    text-align: center;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    margin: 0 auto;
+    margin-top: 15%;
+    height: auto;
+    width: 100%;
 }
 
 section.inicio-sesión input[type="submit"]:hover {

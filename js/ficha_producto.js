@@ -1,37 +1,30 @@
-var currentImage = 1;
-var totalImages = 3;
+const prevButton = document.querySelector(".carousel-prev");
+const nextButton = document.querySelector(".carousel-next");
+const items = document.querySelectorAll(".carousel-item");
+let currentIndex = 0;
 
-function showImage(n) {
-    var images = document.querySelectorAll('.carousel img');
-    var buttons = document.querySelectorAll('.carousel-buttons button');
+function showItem(index) {
+    // Oculta todos los elementos del carrusel y muestra sólo el elemento actual.
+    items.forEach(item => item.classList.remove("active"));
+    items[index].classList.add("active");
+}
 
-    for (var i = 0; i < images.length; i++) {
-        images[i].classList.remove('active');
-        buttons[i + 2].classList.remove('active');
+showItem(currentIndex);
+
+prevButton.addEventListener("click", () => {
+    // Decrementa el índice actual y muestra el elemento correspondiente.
+    currentIndex--;
+    if (currentIndex < 0) {
+        currentIndex = items.length - 1;
     }
+    showItem(currentIndex);
+});
 
-    images[n - 1].classList.add('active');
-    buttons[n + 1].classList.add('active');
-
-    currentImage = n;
-}
-
-function prevImage() {
-    if (currentImage == 1) {
-        showImage(totalImages);
-    } else {
-        showImage(currentImage - 1);
+nextButton.addEventListener("click", () => {
+    // Incrementa el índice actual y muestra el elemento correspondiente.
+    currentIndex++;
+    if (currentIndex >= items.length) {
+        currentIndex = 0;
     }
-}
-
-function nextImage() {
-    if (currentImage == totalImages) {
-        showImage(1);
-    } else {
-        showImage(currentImage + 1);
-    }
-}
-
-function jumpToImage(n) {
-    showImage(n);
-}
+    showItem(currentIndex);
+});

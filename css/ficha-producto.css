@@ -8,6 +8,28 @@
     order: 2;
 }
 
+article{
+    max-width: 880px; /*limitar seccion*/
+    padding: 1rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: rgba(255,255,255, 0.33);
+    display: flex;
+    align-items: initial;
+    justify-content: space-around;
+}
+p{
+    max-width: 880px; /*limitar seccion*/
+    padding: 1rem;
+    margin: 10px auto;
+    border-radius: 5px;
+    background: rgba(255,255,255, 0.33);
+    display: flex;
+    align-items: end;
+}
+
+
+
 #carrusel-imágenes-Kit {
     order: 1;
     float: left;
@@ -22,73 +44,68 @@
 #Comentarios img {
     margin-left: 20px;
 }
-.carousel {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
+
+.carousel-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article div h3{
+    color: #BEC7D8;
+}
+article div img{
+    height: 250px;
 }
 
-.carousel img {
-    position: fixed;
-    width: 100%;
-    height: auto;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+article div a img{
+    height: 30px;
 }
 
-.carousel img.active {
-    opacity: 1;
+.carousel-item {
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
 }
 
 .carousel-buttons {
-    position: absolute;
-    bottom: 30px;
-    left: 12%;
-    transform: translateX(-50%);
-}
-
-.carousel-button {
-    margin: 0 10px;
-    border: none;
-    background: #fff;
-    color: #000;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.carousel img {
-    max-width: 25%;
-    height: auto;
-}
-.carousel-nav {
     display: flex;
-    align-items: center;
-    text-align: left;
-}
-.carousel-nav .prev,
-
-.carousel-nav .next {
-    font-size: 1.5rem;
-    padding: 0.5rem;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-.carousel-nav .numbers {
-    margin: 0 1rem;
-    font-size: 1.2rem;
+.carousel-prev,
+.carousel-next {
+    font-size: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
 }
-
+div div a input{
+    margin: 1000px;
+}
 #contactanos{
     text-decoration: none;
     background-color: #5ABFBF;
+    padding: .5rem;
     color: white;
     width: 500px;
     font-size: 1.3em;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    margin-left: 200px;
-    margin-top: 50px;
+    margin: 0rem 30rem auto;
+
+}
+
+@media (max-width: 550px) {
+    .boton{
+        padding: .5rem;
+        margin: 1000px auto;
+        display: flex;
+        align-items: center;
+    }
 
 }

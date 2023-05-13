@@ -2,89 +2,75 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Ficha Producto</title>
     <link rel="stylesheet" href="css/cabecera.css">
     <link rel="stylesheet" href="css/body.css">
-    <link rel="stylesheet" href="css/ficha-producto.css">
+    <link rel="stylesheet" type="text/css" href="css/ficha-producto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="js/ficha_producto.js"></script>
 </head>
+
 <body>
-
 <!--Aquí empieza la cabecera-->
-<header id="cabecera-web" role="banner">
-    <!--logo-->
-    <a href="index.html">
-        <img src="img/logo-gti.png" alt="logo GTI" id="logo-GTI">
-    </a>
-    <h1>Cuidamos tus plantas</h1>
-    <a href="iniciar-sesión.html">
-        <img src="img/icono-iniciar-sesion.png" alt="iniciar sesión" id="iniciar-sesion">
-    </a>
-
-</header>
+<div class="contenedor">
+    <!--Aquí empieza el header-->
+    <header>
+        <!--logo-->
+        <a href="index.html"><img src="img/logo-gti.png" alt="logo GTI" id="logo-GTI"></a>
+        <!--Frase Cuidamos tus Plantas-->
+        <h1>Cuidamos tus plantas</h1>
+        <!--Icono para Iniciar Sesión-->
+        <nav>
+            <a href="iniciar-sesión.html"><img src="img/icono-iniciar-sesion.png" alt="iniciar sesión" id="iniciar-sesion"></a>
+        </nav>
+    </header>
 <!--Aquí termina la cabecera-->
 
-<!--Aquí empieza la sección Precio producto-->
-<section class="kit-gti-precio" id="kit-gti-precio">
-
-    <!--Aquí empieza el nombre/precio del producto-->
-    <div id="texto-precio-producto">
-        <h1>GTI KIT</h1>
-        <h2>99.99€</h2>
-        <h3>envio no incluido</h3>
-        <a href="Comentarios.html"><!--Enlace a comentarios-->
-            <img src="img/comentarios.png" alt="Botón Comentarios">
-        </a>
-        <!--Aquí terminan los botones de comentarios y valoración-->
-
-        <img src="img/estrellas.png" alt="Valoración por estrellas">
-    </div>
-    <!--Aquí termina el nombre/precio del producto-->
-
-    <!--Aquí empieza el carrusel de imágenes-->
-    <div class="carousel">
-        <img src="img/kitgti.png" alt="Imagen 1" class="active">
-        <img src="img/kitgti2.png" alt="Imagen 2">
-        <img src="img/kitgti3.png" alt="Imagen 3">
-        <div class="carousel-buttons">
-            <button class="carousel-button" onclick="prevImage()">&#8249;</button>
-            <button class="carousel-button" onclick="nextImage()">&#8250;</button>
-            <button class="carousel-button active" onclick="jumpToImage(1)">1</button>
-            <button class="carousel-button" onclick="jumpToImage(2)">2</button>
-            <button class="carousel-button" onclick="jumpToImage(3)">3</button>
+<!--Aquí empieza la sección KIT GTI-->
+    <article class="contenido-kit-gti">
+        <!--Aquí empieza el carrusel de Imágenes-->
+        <div class="carousel-container">
+            <img class="carousel-item active" src="img/kitgti.png" alt="Imagen 1">
+            <img class="carousel-item" src="img/kitgti2.png" alt="Imagen 2">
+            <img class="carousel-item" src="img/kitgti3.png" alt="Imagen 3">
+            <div class="carousel-buttons">
+                <button class="carousel-prev">&#10094;</button>
+                <button class="carousel-next">&#10095;</button>
+            </div>
         </div>
-    </div>
-    <!--Aquí termina el carrusel de imágenes-->
+        <!--Aquí termina el carrusel de Imágenes-->
+        <!--Esto es el script del carrusel! Importante no tocar-->
+        <script src="js/ficha_producto.js"></script>
+        <!--Aquí empieza el nombre, precio y valoración del producto-->
+        <div>
+            <h1>GTI KIT</h1>
+            <h2>99.99€</h2>
+            <h3>envío no incluido</h3>
+            <a href="Comentarios.html"><!--Enlace a comentarios-->
+                <img src="img/comentarios.png" alt="Botón Comentarios">
+                <br>
+                <img src="img/estrellas.png" alt="Valoración por estrellas">
+            </a>
+        </div>
+        <!--Aquí acaba el nombre, precio y valoración del producto-->
 
+    </article>
+    <p>
+        El Kit GTI es un sistema innovador para monitorizar huertos hidropónicos que mide la humedad, salinidad,
+        temperatura, luminosidad y pH con sensores de alta calidad y transmite los datos a través de internet.
+        Además, cuenta con una aplicación web fácil de usar para ver la información en tiempo real y garantiza el
+        mejor cuidado para el huerto gracias a su adaptabilidad y al equipo de técnicos que lo instalan.
+    </p>
 
-
-</section>
-<!--Aquí termina la sección Precio producto-->
-
-<!--Aquí empieza la sección descripción-Kit/Contacto-->
-<section class="descripción-Kit/Contacto" id="descripción-Kit/Contacto">
-    <div id="descripción-botón-contact">
-
-        <!--Aquí empieza la descripción del producto-->
-        <p>
-            El Kit GTI es un sistema innovador para monitorizar huertos hidropónicos que mide la humedad, salinidad, temperatura, luminosidad y pH con sensores de alta calidad y transmite los datos a través de internet. Además, cuenta con una aplicación web fácil de usar para ver la información en tiempo real y garantiza el mejor cuidado para el huerto gracias a su adaptabilidad y al equipo de técnicos que lo instalan.
-        </p>
-        <!--Aquí termina la descripción del producto-->
-
-        <!--Aquí empieza el botón contactanos-->
+    <section class="boton">
         <div>
             <a href="Encuesta.html">
                 <input type="submit" value="Contáctanos" id="contactanos">
             </a>
         </div>
-        <!--Aquí termina el botón contactanos-->
-
-    </div>
-</section>
-<!--Aquí termina la sección Descripción-Kit/Contacto-->
+    </section>
 
 
+</div>
 </body>
 </html>

@@ -1,0 +1,11 @@
+/* @font-face {
+    font-family: Quicksand;
+    src: url('..\font\Quicksand\Quicksand-VariableFont_wght.ttf');
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: Raleway;
+    src: url('..\font\Raleway\Raleway-VariableFont_wght.ttf');
+}

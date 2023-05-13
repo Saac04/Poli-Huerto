@@ -1,9 +1,6 @@
+@import url(font.css);
 
-/*.barra-negra {
-    background-color: black;
-    height: 5px;
-    margin-bottom: 20px;
-}*/
+
 #logo-gti {
     width: 200px; /* ajusta el valor a lo que necesites */
     height: auto;
@@ -12,16 +9,22 @@
 
 section.inicio-sesión {
     text-align: center;
-    margin-top: 50px;
+    margin:  50px 0 0 0;
+    width: 110%;    
 }
 
 section.inicio-sesión img {
-    display: block;
     margin: 0 auto;
+    margin-top: 5%;
+    height: auto;
+    width: 40%;
+    padding: 5% 0 5% 0;
 }
 
 section.inicio-sesión h1 {
-    font-size: 3em;
+    font-family: 'Raleway';
+    font-size: 5em;
+    font-weight: 400;
     margin-bottom: 20px;
 
 
@@ -31,7 +34,17 @@ section.inicio-sesión form {
     display: inline-block;
     text-align: left;
     padding: 20px;
-    box-shadow: 0px 0px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.3);
+    height: auto;
+    width: 500px;
+}
+
+section.inicio-sesión h2 {
+    font-family: 'Raleway';
+    font-size: 2.8em;
+    font-weight: 400;
+    margin-bottom: 5%;
+
 }
 
 section.inicio-sesión label {
@@ -43,22 +56,29 @@ section.inicio-sesión label {
 section.inicio-sesión input[type="text"],
 section.inicio-sesión input[type="password"] {
     display: block;
-    width: 90%;
-    padding: 10px;
-    font-size: 1.2em;
-    border-radius: 5px;
+    height: 3em;
+    width: 100%;
+    padding: 0;
+    font-family: 'Raleway';
+    font-size: 2.6em;
+    border-radius: 40px;
     border: 1px solid #ccc;
-    margin-bottom: 20px;
+    margin: 0;
 }
 
 section.inicio-sesión input[type="submit"] {
     background-color: #5ABFBF;
     color: white;
-    width: 250px;
-    font-size: 1.3em;
+    font-family: 'Raleway';
+    font-size: 4rem;
+    text-align: center;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    margin: 0 auto;
+    margin-top: 15%;
+    height: auto;
+    width: 100%;
 }
 
 section.inicio-sesión input[type="submit"]:hover {
@@ -84,4 +104,8 @@ section.inicio-sesión input[type="submit"]:hover {
 
 .pie-pagina a:last-child {
     margin-left: 1450px;
+}
+
+#mi-cuenta{
+    opacity: 0%;
 }

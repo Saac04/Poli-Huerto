@@ -97,15 +97,30 @@ div div a input{
     border-radius: 10px;
     cursor: pointer;
     margin: 0rem 30rem auto;
-
 }
 
-@media (max-width: 550px) {
-    .boton{
-        padding: .5rem;
-        margin: 1000px auto;
-        display: flex;
-        align-items: center;
+#contactanos {
+    max-width: 25em;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    #contactanos{
+        margin-left: .7em;
+        margin-right: .7em;
+    }
+    p{
+        text-align: justify-all;
     }
 
 }
+
+
+

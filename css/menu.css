@@ -1,20 +1,16 @@
 #menu{
-
     max-width: 900px;
-    margin: 22px auto;
-
+    margin: 25px auto;
 }
-#menu ul{
 
+#menu ul{
     list-style: none;
     padding: 0;
     margin: 0px auto;
     display: flex;
     justify-content: space-around;
-    padding-top: 30px;
-    padding-bottom: 15px;
-
 }
+
 #menu ul li{
     flex: 1 1 0px;
     text-align: center;
@@ -22,16 +18,29 @@
 #menu ul li a{
     text-decoration: none;
     color: black;
-    font-size: 33px;
+    font-size: 19px;
+    order: 50;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
 }
 nav ul li a.activa {
     color: black;
     font-weight: bold;
 }
-nav ul{
-    list-style: none;
-}
-nav ul a{
-    text-decoration: none;
-    color: black;
+
+
+@media (max-width: 530px) {
+
+    #menu{
+        width: 350px;
+    }
+
+
 }

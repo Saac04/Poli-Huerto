@@ -1,22 +1,23 @@
 .consulta div{
-    width: 302px;
-    height: 332px;
     background-color: #A8E0FD;
     border-radius: 10px;
     margin: 0px auto;
 }
-.consulta h1{
-    margin-top: 10px;
-    margin-left: 15px;
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
 }
-.error p{
-    margin-left: 15px;
-}
+
 #descripcion{
-    width: 265px;
-    height: 121px;
-    border-radius: 10px;
-    margin-left: 15px;
+    height: 150px;
+    width : 600px;
+    border-radius: 10px;    
+    margin-bottom: 35px ;
+    font-size: 20px;
+    padding: 20px;
 }
 
 
@@ -24,18 +25,31 @@
     background-color: #5ABFBF;
     color: white;
     width: 272px;
+    height: 65px;
     font-size: 1.3em;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    margin-left: 15px;
-    margin-top: 10px;
 }
 #Reporte:hover {
     background-color: #5ABFBF;
+    font-weight: 600;
 }
 
 #descripcion #Reporte{
     display: flex;
     justify-content: center;
+}
+
+@media(max-width: 830px){
+    #descripcion{
+        width: 450px;
+    }
+
+}
+@media(max-width: 600px){
+    #descripcion{
+        width: 300px;
+    }
+
 }

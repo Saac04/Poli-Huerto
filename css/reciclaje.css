@@ -1,49 +1,52 @@
-h1{
-    font-family: "Raleway", sans-serif;
-}
-section.reciclar {
-    text-align: center;
-    margin-top: 50px;
-}
-section.reciclar img {
-    display: block;
-    margin: 0 auto;
-}
-section.reciclar h1 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
 
+.enviar-encuesta {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: stretch;
+    text-align: center;
+    width: 500px;
 }
-section.reciclar form {
-    display: inline-block;
-    text-align: left;
-    padding: 20px;
-    box-shadow: 0px 0px 0px rgba(0,0,0,0.2);
+/* 
+========================================================================
+|css que tambien esta en consulta, aka se debe de colocsar en el mega css|
+========================================================================
+*/
+
+.enviar-encuesta .producto-motivo{
+    display: flex;
+    flex-direction: column;
+     
 }
-section.reciclar label {
-    display: block;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-section.reciclar input[type="text"],
-section.reciclar input[type="password"] {
-    display: block;
-    width: 90%;
-    padding: 10px;
-    font-size: 1.2em;
+.enviar-encuesta input[type="text"] {
     border-radius: 10px;
     border: 1px solid #ccc;
     margin-bottom: 20px;
+    height: 50px;
 }
-section.reciclar input[type="submit"] {
+
+.enviar-encuesta input[type="submit"] {
     background-color: #5ABFBF;
     color: white;
-    width: 97%;
+    width: 272px;
+    height: 65px;
     font-size: 1.3em;
     border: none;
     border-radius: 10px;
     cursor: pointer;
 }
-section.reciclar input[type="submit"]:hover {
+
+.reciclar input[type="submit"]:hover {
     background-color: #5ABFBF;
+}
+
+@media(max-width: 600px){
+    .enviar-encuesta input[type="text"] {
+        width: 250px;
+        margin: 20px auto;
+    }
+
+    .reciclar{
+        width: 100%;
+    }
 }

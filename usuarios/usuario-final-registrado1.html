@@ -3,35 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Poli[HuertO]</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="/css/cabecera.css">
   <link rel="stylesheet" href="/css/body.css">
   <link rel="stylesheet" href="/css/reciclaje.css">
   <link rel="stylesheet" href="/css/consulta.css">
   <link rel="stylesheet" href="/css/menu.css">
   <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/monitorizar.css">
   <script src="/../js/usuario_final_registrado.js"></script>
+
+
   <style>
     .final{
       display: none;
-
     }
     .activo{
       display: block;
     }
-    h1{
-      font-family: "Raleway", sans-serif;
-    }
-    section{
-      margin-top: 50px ;
-    }
 
-    #menu2{
-      font-size: 33px;
-      padding: 50px;
-    }
+  
     section {
-      height: 100vh; /* establece la altura de la sección al 100% del viewport */
+      /*height: 100vh;  establece la altura de la sección al 100% del viewport */
       overflow: auto; /* permite desplazamiento si el contenido de la sección es más grande que la pantalla */
     }
   </style>
@@ -54,10 +47,9 @@
 <!--Aquí comienza el menú de la interfaz-->
 <nav id="menu">
   <ul>
-    <li data-item="1"><a href="#" class="activa">Monitorizar</a></li>
-    <li data-item="2"><a href="#" class="">Plantas</a></li>
-    <li data-item="3"><a href="#" class="">Consulta</a></li>
-    <li data-item="4"><a href="#"class="">Reciclar</a></li>
+    <li data-item="1" class="activa"><a href="#" >Monitorizar</a></li>
+    <li data-item="3" class=""><a href="#" >Consulta</a></li>
+    <li data-item="4" class=""><a href="#" >Reciclar</a></li>
   </ul>
 </nav>
 <!--Aquí termina el menú de la interfaz-->
@@ -65,186 +57,161 @@
 <section class="final reciclar" id="item4">
   <!--Aquí comienza el formulario de petición de reciclaje sensor-->
   <form class="enviar-encuesta">
-    <h2>Introduzca el item a recliclar</h2>
-    <input type="text" placeholder="Escriba aquí" required>
-    <h2>Introduzca el motivo del reciclaje</h2>
-    <input type="text" placeholder="Escriba aquí" required>
-    <br></br>
-    <input type="submit" id="encuesta">
-    <br></br>
-    <br></br>
-    <br></br>
+    <div class='producto-motivo'>
+      <p>Introduzca el item a recliclar</p>
+      <input type="text" placeholder="" required>
+      <p>Introduzca el motivo del reciclaje</p>
+      <input type="text" placeholder="" required>
+    </div>
+    <div>
+      
+      <input type="submit" id="encuesta" value="Enviar">
+    </div>
   </form>
   <!--Aquí termina el formulario de petición de reciclaje sensor-->
 </section>
 <!--Aquí termina la sección de reciclar-->
-<!--Aquí comienza la sección de plantas-->
-<section id="item2" class="final plantas">
-  <!--Aquí comienza el contenedor de plantas-->
-  <div class="container">
-  <h1>Kit GTI 1</h1>
-  <div class="iconos-plantas">
-    <img src="/img/icono-humedad.png" alt="sensor humedad">
-    <img src="/img/icono-sal.png" alt="sensor sal">
-    <img src="/img/icono-temperatura.png" alt="sensor temperatura">
-    <img src="/img/icono-ph.png" alt="sensor ph">
-    <img src="/img/icono-luz.png" alt="sensor luz">
-  </div>
-  <h1>Kit GTI 2</h1>
-  <div class="iconos-plantas">
-    <img src="/img/icono-humedad.png" alt="sensor humedad">
-    <img src="/img/icono-sal.png" alt="sensor sal">
-    <img src="/img/icono-temperatura.png" alt="sensor temperatura">
-    <img src="/img/icono-ph.png" alt="sensor ph">
-    <img src="/img/icono-luz.png" alt="sensor luz">
-  </div>
-</div>
-  <!--Aquí termina el contenedor de plantas-->
 
-  <!--imagen +-->
-  <a href="#">
-    <img src="/img/ab85012b-acf5-4687-9b27-41bfbeeb1bfa.png" alt="añadir">
-  </a>
-  <!--imagen lápiz-->
-  <a href="#">
-    <img src="/img/06526a67-5a25-47ab-8c5e-d131840b8676.png" alt="sobreescribir">
-  </a>
-</section>
-<!--Aquí termina la sección de plantas-->
 <!--Aquí comienza la sección de consulta-->
 <section class="final consulta" id="item3">
   <div>
-    <h1>Consulta</h1>
-    <form class="error">
-      <p>Descripción</p>
-      <input type="text" id="descripcion" placeholder="Comunique su error" required>
-      <input type="submit" id="Reporte">
+    <form class="form">
+      <div>
+        <!--<input type="text" id="descripcion" placeholder="Por favor, comunique su problema con nosotros" required> -->        
+        <textarea id="descripcion" name="descripcion" placeholder="Por favor, comunique su problema con nosotros"></textarea>
+      </div>
+      <div>
+        <input type="submit" id="Reporte" value="Enviar">
+      </div>
     </form>
   </div>
 </section>
 <!--Aquí termina la sección de consulta-->
 <!--Aquí comienza la sección de monitorización-->
 <section class="final activo huertos" id="item1">
-  <!--Aquí comienza la gráfica 1-->
-  <article id="grafica1">
-  <canvas id="plot1"></canvas>
-  <script>
-    var ctx1 = document.getElementById('plot1').getContext('2d');
-
-    var data1 = {
-      labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo'],
-      datasets: [{
-        label: 'Gráfica 1',
-        data: [10, 11, 12, 13, 14],
-        backgroundColor: 'rgba(255, 99, 132, 0.2)',
-        borderColor: 'rgba(255,99,132,1)',
-        borderWidth: 1
-      }]
-    };
-
-    var options1 = {
-      title: {
-        display: true,
-        text: 'Gráfica 1'
-      }
-    };
-
-    new Chart(ctx1, {
-      type: 'line',
-      data: data1,
-      options: options1
-    });
-  </script>
-  </article>
-  <!--Aquí termina la gráfica 1-->
-  <!--Aquí comienza la gráfica 2-->
-  <article id="grafica2">
-    <canvas id="plot2"></canvas>
-    <script>
-      var ctx2 = document.getElementById('plot2').getContext('2d');
-
-      var data2 = {
-        labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo'],
-        datasets: [{
-          label: 'Gráfica 2',
-          data: [5, 4, 3, 2, 1],
-          backgroundColor: 'rgba(54, 162, 235, 0.2)',
-          borderColor: 'rgba(54, 162, 235, 1)',
-          borderWidth: 1
-        }]
-      };
-
-      var options2 = {
-        title: {
-          display: true,
-          text: 'Gráfica 2'
-        }
-      };
-
-      new Chart(ctx2, {
-        type: 'line',
-        data: data2,
-        options: options2
-      });
-    </script>
-  </article>
-  <!--Aquí termina la gráfica 2-->
-  <!--Aquí comienza la gráfica 3-->
-  <article id="grafica3">
-    <canvas id="plot3"></canvas>
-    <script>
-      var ctx3 = document.getElementById('plot3').getContext('2d');
-
-      var data3 = {
-        labels: ['Manzanas', 'Naranjas', 'Plátanos'],
-        datasets: [{
-          label: 'Gráfica 3',
-          data: [20, 14, 23],
-          backgroundColor: [
+  <!-- Aquí comienza el div de las graficas -->
+  <div>
+    <nav id="menu-huertos">
+      <!--<a href="#">Logo</a>-->
+      <a>Huertos ˅</a>  
+      <ul>
+        <li data-item="6"><a href="#grafica1" class="activa">Kit GTI 01</a></li>
+        <li data-item="7"><a href="#grafica2" class="">Kit GTI 02</a></li>
+        <li data-item="8"><a href="#grafica3" class="">Plantas de Lucia</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="graficas">
+    <!--Aquí comienza la gráfica 1-->
+    <article id="grafica1" class="grafica">
+      <canvas id="plot1"></canvas>
+      <script>
+        var ctx1 = document.getElementById('plot1').getContext('2d');
+        
+        var data1 = {
+          labels: ['13:00', '14:00', '15:00', '16:00', '17:00', '18:00'],
+          datasets: [{
+            label: 'Kit GTI 01',
+            data: [25.3, 25.4, 25.6, 25.9, 26.1, 26 ],
+            backgroundColor: 'rgba(255, 99, 132, 0.5)',
+            borderColor: 'rgba(255,99,132,1)',
+            borderWidth: 1
+          }]
+        };
+        
+        var options1 = {
+          title: {
+            display: true,
+            text: 'Kit GTI 01'
+          }
+        };
+        
+        new Chart(ctx1, {
+          type: 'line',
+          data: data1,
+          options: options1
+        });
+      </script>
+    </article>
+    <!--Aquí termina la gráfica 1-->
+    <!--Aquí comienza la gráfica 2-->
+    <article id="grafica2" class="grafica">
+      <canvas id="plot2"></canvas>
+      <script>
+        var ctx2 = document.getElementById('plot2').getContext('2d');
+        
+        var data2 = {
+          labels: ['13:00', '14:00', '15:00', '16:00', '17:00', '18:00'],
+          datasets: [{
+            label: 'Kit GTI 02',
+            data: [27.4, 27.4, 27.7, 28, 28.3, 28.5],
+            backgroundColor: 'rgba(54, 162, 235, 0.5)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 1
+          }]
+        };
+        
+        var options2 = {
+          title: {
+            display: true,
+            text: 'Kit GTI 02'
+          }
+        };
+        
+        new Chart(ctx2, {
+          type: 'line',
+          data: data2,
+          options: options2
+        });
+      </script>
+    </article>
+    <!--Aquí termina la gráfica 2-->
+    <!--Aquí comienza la gráfica 3-->
+    <article id="grafica3" class="grafica">
+      <canvas id="plot3"></canvas>
+      <script>
+        var ctx3 = document.getElementById('plot3').getContext('2d');
+        
+        var data3 = {
+          labels: ['13:00', '14:00', '15:00', '16:00', '17:00', '18:00'],
+          datasets: [{
+            label: 'Plantas de Lucia',
+            data: [21.9, 21.3, 21, 21, 21.1, 21.3],
+            backgroundColor: [
             'rgba(255, 99, 132, 0.2)',
             'rgba(54, 162, 235, 0.2)',
             'rgba(255, 206, 86, 0.2)'
-          ],
-          borderColor: [
+            ],
+            borderColor: [
             'rgba(255, 99, 132, 1)',
             'rgba(54, 162, 235, 1)',
             'rgba(255, 206,235,1)'],
-
-        }],borderWidth: 1,
-      };
-      var options3 = {
-        title: {
-          display: true,
-          text: 'Gráfica 3'
-        }
-      };
-
-      new Chart(ctx3, {
-        type: 'line',
-        data: data3,
-        options: options3
-      });
-    </script>
-  </article>
-  <!--Aquí termina la gráfica 3-->
-  <!--Aquí comienza la gráfica 1-->
-  <nav id="menu1">
-    <!--<a href="#">Logo</a>-->
-    <ul id="menu2">
-      <li data-item="6"><a href="#grafica1" class="activa">Kit GTI 01</a></li>
-      <li data-item="7"><a href="#grafica2" class="">Kit GTI 02</a></li>
-      <li data-item="8"><a href="#grafica3" class="">Plantas de Lucia</a></li>
-      <li data-item="9"><a href="#" class="">Aromatizantes</a></li>
-      <li data-item="10"><a href="#" class="">Kit GTI 05</a></li>
-    </ul>
-  </nav>
+            
+          }],borderWidth: 1,
+        };
+        var options3 = {
+          title: {
+            display: true,
+            text: 'Plantas de lucia'
+          }
+        };
+        
+        new Chart(ctx3, {
+          type: 'line',
+          data: data3,
+          options: options3
+        });
+      </script>
+    </article>
+    <!--Aquí termina la gráfica 3-->
+  </div>
 </section>
-<footer class="pie-pagina" id="pie">
-
+<!-- <footer class="pie-pagina" id="pie">
+  
   <a href="../añadir.html">
     <img src="/img/icono-mas.png">
   </a>
-</footer>
+</footer> -->
 <script>
   document.querySelector("#menu").addEventListener(
           "click",
@@ -276,7 +243,7 @@
   );
 </script>
 <script>
-  document.querySelector("#menu1").addEventListener(
+  document.querySelector("#menu-huertos").addEventListener(
           "click",
           (event) => {
             let value = event.target.parentNode.dataset.item; // Se cambia el selector a parentNode.dataset.item para seleccionar el valor del atributo data-item del elemento li
@@ -291,7 +258,7 @@
                       }
                     }
             )
-            let links = document.querySelectorAll("#menu1 a");
+            let links = document.querySelectorAll("#menu-huertos a");
             links.forEach((link) => {
               if (link.parentNode.dataset.item === value) {
                 link.classList.add("activa");
@@ -319,6 +286,13 @@
       var href = this.getAttribute('href');
       document.querySelector(href).style.display = 'block';
     });
+  });
+</script>
+<script>
+  $(document).ready(function(){
+    $('.form').on('submit', function(){
+        alert('Your details were successfully received.');
+      });
   });
 </script>
 </body>
